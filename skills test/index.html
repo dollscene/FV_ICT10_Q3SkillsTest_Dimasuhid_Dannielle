@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>skills test intramurals sign up</title>
+    </head>
+    </html>
+    <style>
+    body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(45deg, #f5c2da, #f4bacf);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .signup-card {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            width: 550px;
+            text-align: center;
+        }
+
+        h2 { color: #333; margin-bottom: 25px; }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 16px;
+            box-sizing: border-box; /* keeps width perfect */
+            outline: none;
+        }
+
+        input:focus { border-color: #ef6eb5; }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #f99bbf;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover { background: #f387c6; }
+
+        #result {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+    </style>
+
+    <body>
+       <div class="signup-card">
+        <h2>Intramurals Sign Up</h2>
+         <input type="text" id="fname" placeholder="Full name (Ttile Case Format Required)">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button py-click="validateForm">Sign Up</button>
+        <p id="result"></p>
+    </div>
+
+<script type="py" src="main.py"></script>
+
+    </body>
+    
